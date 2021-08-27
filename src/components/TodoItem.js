@@ -7,7 +7,11 @@ function TodoItem(props) {
         className={todo.isComplete ? "todo-li complete" : "todo-li"}
         key={todo.id}
       >
-        <p onClick={() => props.completeTodo(todo.id)} className="todo-text">
+        <p
+          onClick={() => props.completeTodo(todo.id)}
+          className={todo.isComplete ? "todo-text text-complete" : "todo-text"}
+          key={todo.id}
+        >
           {todo.text}
         </p>
         <button

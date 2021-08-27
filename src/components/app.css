@@ -86,11 +86,6 @@
   word-wrap: break-word;
 }
 
-.todo-text {
-  width: 80%;
-  padding: 20px;
-}
-
 .todo-button {
   border: none;
   background-color: white;
@@ -99,9 +94,18 @@
   cursor: pointer;
   padding: 0 20px 0 20px;
   border-radius: 10px;
+  text-decoration: none;
+}
+
+.todo-text {
+  width: 80%;
+  padding: 20px;
 }
 
 .complete {
   background-color: plum;
+}
+
+.text-complete {
   text-decoration: line-through;
 }
