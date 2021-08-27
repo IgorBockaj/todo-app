@@ -17,10 +17,26 @@ function TodoList() {
     setTodos(removedArr);
   };
 
+  const completeTodo = (id) => {
+    const updatedTodos = todos.map((todo) => {
+      if (todo.id === id) {
+        todo.isComplete = !todo.isComplete;
+      }
+      return todo;
+    });
+
+    setTodos(updatedTodos);
+  };
+
   return (
     <div className="todo-list">
       <TodoForm className="todo-form" addTodo={addTodo} />
-      <TodoItem className="todo-item" todos={todos} removeTodo={removeTodo} />
+      <TodoItem
+        className="todo-item"
+        todos={todos}
+        removeTodo={removeTodo}
+        completeTodo={completeTodo}
+      />
     </div>
   );
 }

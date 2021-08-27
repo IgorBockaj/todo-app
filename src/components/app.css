@@ -75,7 +75,7 @@
   padding: 0 5px 0 0;
   font-size: 25px;
   color: white;
-  background-color: rgba(221, 160, 221, 1);
+  background-color: rgb(157, 79, 230);
   border-radius: 10px;
   list-style: none;
   display: flex;
@@ -99,4 +99,9 @@
   cursor: pointer;
   padding: 0 20px 0 20px;
   border-radius: 10px;
+}
+
+.complete {
+  background-color: plum;
+  text-decoration: line-through;
 }
